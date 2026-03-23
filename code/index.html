@@ -2,22 +2,136 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
+    <title>Project-News-Site</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header>
-      <!-- Some kind of logo and navbar -->
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="logo-link">
+          <img src="./assets/food.png" alt="sitelogo" class="nav-logo">
+        </a>
+        <a href="https://www.foodandwine.com/travel" target="_blank">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+      </div>
     </header>
 
-    <section class="big-news">
-      <!-- The big news content -->
+    <section class="news-card">
+      <!-- The news content - grid layout -->
+      <div class="news-card-item news-card-item-intro">
+        <section class="intro-card-content">
+          <div class="intro-card-box"> 
+            <p class="intro-text">Welcome to our food news hub, where fresh stories, bold flavors, and culinary inspiration come 
+            together. We bring you the latest trends, chef insights, and food culture from around the world, all 
+            served with a passion for good taste and honest storytelling.</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="news-card-item news-card-item-wide">
+        <section class="wide-news-card-content">
+          <div class="wide-news-card-box"> 
+            <h4>A trending dish / <span>Plant‑Based Comfort Bowls Lead Global Trends</span></h4>
+            <p>Across the world, chefs are reinventing classic comfort dishes using plant‑based ingredients, 
+            creating hearty bowls filled with grains, roasted vegetables, rich sauces, and creative meat‑free proteins. 
+            These bowls are celebrated for being flavorful, nourishing, and environmentally conscious — a perfect blend 
+            of comfort and sustainability.</p>
+            <button class="button">
+              <a href="https://feedhours.com/ultimate-food-guide-2026-trending-dishes-everyone-is-talking-about" target="_blank">Read the trend report here</a>
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <div class="news-card-item news-card-item-wide">
+        <section class="wide-news-card-content">
+          <div class="wide-news-card-box facts-card-box">             
+            <h4>Food Facts of the Day</h4>
+              <ul class="food-facts-list">
+                <li><strong>Did you know?</strong> World’s oldest noodle was found in China and is over 4,000 years old.</li>
+                <li><strong>Food fact:</strong> Carrots were originally purple, yellow, and white — not orange.</li>
+                <li><strong>Quick bite:</strong> Chili peppers evolved heat to deter mammals, not insects.</li>
+                <li><strong>Fun fact:</strong> Bananas are berries, but strawberries are not.</li>
+                <li><strong>Fresh fact:</strong> Saffron is the world’s most expensive spice due to its tiny yield.</li>
+              </ul>                 
+          </div>
+        </section>
+      </div>
+
+      <div class="news-card-item news-card-item-small">
+        <section class="news-card-content">
+          <div class="news-card-box">
+            <a href="https://thewoksoflife.com/" target="_blank" class="region-card"> 
+            <img src="./assets/asia-food.jpg" alt="Asian food">
+            <h4>Spice Markets Come Alive /  <span>Asia</span></h4> 
+            <p>Across Asia, vibrant street markets are drawing food lovers with bold spices, sizzling noodles, 
+            and timeless recipes passed down through generations.</p>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <div class="news-card-item news-card-item-small">
+        <section class="news-card-content">
+          <div class="news-card-box">
+            <a href="https://www.africanbites.com/" target="_blank" class="region-card"> 
+            <img src="./assets/africa-food.jpg" alt="African food">
+            <h4>Flavors of the Savannah Rise /  <span>Africa</span></h4>
+            <p>African chefs are spotlighting traditional grains, rich stews, and smoky grills, bringing 
+            regional dishes to global attention with fresh creativity.</p>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <div class="news-card-item news-card-item-small">
+        <section class="news-card-content">
+          <div class="news-card-box"> 
+            <a href="https://greenkitchenstories.com/" target="_blank" class="region-card">
+            <img src="./assets/europe-food.jpg" alt="Europe food">
+            <h4>Classic Comforts Return to the Table /  <span>Europe</span></h4>
+            <p>Across Europe, rustic breads, seasonal produce, and heritage cooking are making a comeback, 
+            celebrating simple meals crafted with care.</p>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <div class="news-card-item news-card-item-small">
+        <section class="news-card-content">
+          <div class="news-card-box"> 
+            <a href="https://cooking.nytimes.com/" target="_blank" class="region-card">
+            <img src="./assets/american-food.jpg" alt="American food">
+            <h4>Street Grills Ignite New Trends /  <span>America</span></h4>
+            <p>South American street food is inspiring global menus with smoky barbecues, vibrant sauces, 
+            and dishes rooted in deep culinary tradition.</p>
+            </a>
+          </div>
+        </section>
+      </div>
+
     </section>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
+    <footer>
+      <p>© uma. Self-Paced-Class of Technigo 2026.</p>
+    </footer>
+
+    <!-- the menu JS toggle -->
+    <script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+    }
+    </script>
+
   </body>
 </html>
