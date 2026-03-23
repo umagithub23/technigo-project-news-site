@@ -20,4 +20,4 @@ I worked iteratively — building one section at a time, testing responsiveness,
 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+-- Deployed in cloudflare - https://technigo-project-news-site.pages.dev/
